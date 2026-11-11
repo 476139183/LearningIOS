@@ -1,3 +1,24 @@
+# iOS 学习资料库
+
+集中整理 iOS 并发、学习笔记、开发资料、书籍、会议分享与实践示例。保留主仓库原有学习索引，各来源独立目录，并标明来源、版本和许可证。
+
+| 分类 | 内容 |
+|---|---|
+| [并发与 GCD](collections/concurrency/) | Learn-GCD 工程与笔记 |
+| [学习笔记](collections/notes/) | zen 开发心得 |
+| [开发资料索引](collections/catalogs/) | 博客、框架与开发文档合集 |
+| [书籍资料](collections/books/) | iOS 开发书籍及附带资料 |
+| [会议资料](collections/conferences/) | 2016 年 Swift 大会分享 |
+| [实践示例](collections/practice/) | TDD 示例工程 |
+
+[来源、许可证与迁移状态](SOURCES.md)。8 个来源的默认分支文件独立归档，各分支和标签完整历史保存在 `legacy/项目名/branches/分支名`、`legacy/项目名/tags/标签名`。
+
+原 Fork 待完成远端校验后删除。Learn-GCD 仍提供 [原 Pages 网站](https://476139183.github.io/Learn-GCD/)，其原仓库保留为兼容入口。各目录继续适用各自许可证与版权声明，不对第三方内容统一重新授权。
+
+书籍、图片及工程资源保留原文件，克隆资料库体积较大。旧工程未宣称已在当前 Xcode 编译通过。运行 `python3 scripts/verify_collections.py` 可核验文件与历史标签。
+
+## 原有学习索引
+
 # LearningIOS
 iOS初学者面对网上浩瀚的资料往往不知所措，为了让iOS初学者们少走弯路，少花时间在搜索资料上，个人为iOS初学者整理了一份学习资料。希望能帮助到大家。
 

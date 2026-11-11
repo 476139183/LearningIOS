@@ -21,6 +21,8 @@ jobs:
           fetch-depth: 0
       - name: Verify symlink archive handling
         run: python3 scripts/cleanup-batch/test_archive_symlinks.py
+      - name: Verify self-created source catalog
+        run: python3 scripts/cleanup-batch/test_catalog_self_source.py
       - name: Import source snapshots
         run: |
           cp scripts/cleanup-batch/inventory.json /tmp/batch-sources-inventory.json

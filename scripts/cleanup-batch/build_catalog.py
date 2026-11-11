@@ -28,18 +28,18 @@ for s in sources:
   if before!=after:p.write_bytes(after);rewrites.append({'path':p.relative_to(root).as_posix(),'original_blob':blob(before),'imported_blob':blob(after)})
 rewrite_map={r['path']:r['imported_blob'] for r in rewrites}
 for s in sources:
- s['history_tags']=histories[s['name']];s['original_repository_status']='retained_pending_verification'
+ s['history_tags']=histories[s['name']];s['original_repository_status']='retained_for_compatibility' if s['name'] in config.get('retain_sources',[]) else 'retained_pending_verification'
  s['tracked_files']=[{'path':f['path'],'mode':f['mode'],'source_blob':f['sha'],'imported_blob':rewrite_map.get(s['destination']+'/'+f['path'],f['sha'])} for f in by_name[s['name']]['tree'] if f['type']=='blob']
  text='# '+s['name']+'\n\n[打开归档目录](../'+s['destination']+'/) · [原 Fork]('+s['source_url']+')\n\n'
- text+='- 上游：https://github.com/'+s['parent']+'\n- 固定来源：`'+s['branch']+'` / `'+s['sha']+'`\n- 文件数：'+str(s['files'])+'\n'
- text+='- 许可证：`'+((s['license'] or {}).get('spdx_id') or '未识别')+'`；以原目录内的许可证与版权声明为准。\n- 原 Fork 状态：完成远端校验后删除。\n'
+ text+='- 上游：'+('https://github.com/'+s['parent'] if s['parent'] else '自建项目')+'\n- 固定来源：`'+s['branch']+'` / `'+s['sha']+'`\n- 文件数：'+str(s['files'])+'\n'
+ text+='- 许可证：`'+((s['license'] or {}).get('spdx_id') or '未识别')+'`；以原目录内的许可证与版权声明为准。\n- 原仓库状态：'+('保留 Pages 兼容入口。' if s['name'] in config.get('retain_sources',[]) else '完成远端校验后删除。')+'\n'
  text+='\n## 分支与标签历史\n\n'
  for ref in s['history_tags']:
   tag=ref.removeprefix('refs/tags/');text+='- ['+tag+']('+target+'/tree/'+tag+')\n'
  if s['name']=='Hikari':text+='\n主分支主要为说明文档；LLVM 混淆实现请查看上方 `release_60` 等归档分支。\n'
  text+='\n文件校验值和链接修复记录见 [manifest.json](manifest.json)。原有源码、资源及个人改动均保留；归档不代表已在当前系统编译运行。\n'
  (catalog/(s['name']+'.md')).write_text(text)
-manifest['sources'].extend(sources);manifest['link_rewrites'].extend(rewrites);manifest['updated_at']=datetime.datetime.now(datetime.timezone.utc).isoformat();manifest['pending_cleanup']=[s['name'] for s in sources]
+manifest['sources'].extend(sources);manifest['link_rewrites'].extend(rewrites);manifest['updated_at']=datetime.datetime.now(datetime.timezone.utc).isoformat();manifest['pending_cleanup']=[s['name'] for s in sources if s['name'] not in config.get('retain_sources',[])]
 manifest['scope']='Source snapshots with per-source history and original-repository status recorded below; newly imported sources retain all branches and tags. See cleanup and pending_cleanup.'
 manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 labels={'algorithms':'算法与刷题','interviews':'面试资料','development':'开发资料','ios':'iOS 示例与组件','reverse':'逆向学习','concurrency':'并发与GCD','notes':'学习笔记','catalogs':'开发资料索引','books':'书籍资料','conferences':'会议资料','practice':'实践示例'}

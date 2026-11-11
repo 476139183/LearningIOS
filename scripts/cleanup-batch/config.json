@@ -21,5 +21,8 @@
     "practice": [
       "TDDDemo"
     ]
-  }
+  },
+  "retain_sources": [
+    "Learn-GCD"
+  ]
 }

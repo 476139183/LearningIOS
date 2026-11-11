@@ -1,0 +1,25 @@
+{
+  "target": "LearningIOS",
+  "groups": {
+    "concurrency": [
+      "Learn-GCD"
+    ],
+    "notes": [
+      "zen"
+    ],
+    "catalogs": [
+      "iOSBlogCN",
+      "iOSStack",
+      "iOSDeveloperDocument"
+    ],
+    "books": [
+      "iOS_Development-Book"
+    ],
+    "conferences": [
+      "atswift-2016-resources"
+    ],
+    "practice": [
+      "TDDDemo"
+    ]
+  }
+}

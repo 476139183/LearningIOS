@@ -13,7 +13,7 @@
 
 [来源、许可证与迁移状态](SOURCES.md)。8 个来源的默认分支文件独立归档，各分支和标签完整历史保存在 `legacy/项目名/branches/分支名`、`legacy/项目名/tags/标签名`。
 
-原 Fork 待完成远端校验后删除。Learn-GCD 仍提供 [原 Pages 网站](https://476139183.github.io/Learn-GCD/)，其原仓库保留为兼容入口。各目录继续适用各自许可证与版权声明，不对第三方内容统一重新授权。
+7 个原 Fork 已在远端文件及历史校验后删除。临时导入工作流已停用。Learn-GCD 仍提供 [原 Pages 网站](https://476139183.github.io/Learn-GCD/)，其原仓库保留为兼容入口。各目录继续适用各自许可证与版权声明，不对第三方内容统一重新授权。
 
 书籍、图片及工程资源保留原文件，克隆资料库体积较大。旧工程未宣称已在当前 Xcode 编译通过。运行 `python3 scripts/verify_collections.py` 可核验文件与历史标签。
 

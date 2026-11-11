@@ -1,12 +1,12 @@
 # iOSDeveloperDocument
 
-[打开归档目录](../collections/catalogs/iOSDeveloperDocument/) · [原 Fork](https://github.com/476139183/iOSDeveloperDocument)
+[打开归档目录](../collections/catalogs/iOSDeveloperDocument/) · 原仓库（已删除）：`https://github.com/476139183/iOSDeveloperDocument`
 
 - 上游：https://github.com/CainLuo/DeveloperDocument
 - 固定来源：`master` / `473fd5f996e14434bb2acb62d0275b4ef5746216`
 - 文件数：151
 - 许可证：`未识别`；以原目录内的许可证与版权声明为准。
-- 原仓库状态：完成远端校验后删除。
+- 原仓库状态：文件、各分支和标签历史校验后已删除。
 
 ## 分支与标签历史
 

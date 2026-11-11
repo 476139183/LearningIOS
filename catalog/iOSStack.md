@@ -1,12 +1,12 @@
 # iOSStack
 
-[打开归档目录](../collections/catalogs/iOSStack/) · [原 Fork](https://github.com/476139183/iOSStack)
+[打开归档目录](../collections/catalogs/iOSStack/) · 原仓库（已删除）：`https://github.com/476139183/iOSStack`
 
 - 上游：https://github.com/mgoofyy/iOSStack
 - 固定来源：`master` / `641111b726af6135b720947962e7649cec65d226`
 - 文件数：63
 - 许可证：`未识别`；以原目录内的许可证与版权声明为准。
-- 原仓库状态：完成远端校验后删除。
+- 原仓库状态：文件、各分支和标签历史校验后已删除。
 
 ## 分支与标签历史
 

@@ -1,6 +1,6 @@
 # Learn-GCD
 
-[打开归档目录](../collections/concurrency/Learn-GCD/) · [原 Fork](https://github.com/476139183/Learn-GCD)
+[打开归档目录](../collections/concurrency/Learn-GCD/) · [原仓库](https://github.com/476139183/Learn-GCD)
 
 - 上游：自建项目
 - 固定来源：`master` / `ff8b9af18994470c7dc2943171c126ae86a1577d`

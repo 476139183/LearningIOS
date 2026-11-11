@@ -1,12 +1,12 @@
 # atswift-2016-resources
 
-[打开归档目录](../collections/conferences/atswift-2016-resources/) · [原 Fork](https://github.com/476139183/atswift-2016-resources)
+[打开归档目录](../collections/conferences/atswift-2016-resources/) · 原仓库（已删除）：`https://github.com/476139183/atswift-2016-resources`
 
 - 上游：https://github.com/atConf/atswift-2016-resources
 - 固定来源：`master` / `7a410140b9aed5831ef5a048b8c09c1baa49e402`
 - 文件数：121
 - 许可证：`未识别`；以原目录内的许可证与版权声明为准。
-- 原仓库状态：完成远端校验后删除。
+- 原仓库状态：文件、各分支和标签历史校验后已删除。
 
 ## 分支与标签历史
 

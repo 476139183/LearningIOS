@@ -1,12 +1,12 @@
 # iOS_Development-Book
 
-[打开归档目录](../collections/books/iOS_Development-Book/) · [原 Fork](https://github.com/476139183/iOS_Development-Book)
+[打开归档目录](../collections/books/iOS_Development-Book/) · 原仓库（已删除）：`https://github.com/476139183/iOS_Development-Book`
 
 - 上游：https://github.com/kopuCoder/iOS_Development-Book
 - 固定来源：`master` / `2357d21a489fe8593e04f8298fe13196b1d742df`
 - 文件数：124
 - 许可证：`MIT`；以原目录内的许可证与版权声明为准。
-- 原仓库状态：完成远端校验后删除。
+- 原仓库状态：文件、各分支和标签历史校验后已删除。
 
 ## 分支与标签历史
 
